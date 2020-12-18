@@ -1,5 +1,5 @@
 ---
-- hosts: testserv
+- hosts: Test servers
   name: Install the apache web service
   become: yes
   tasks:
