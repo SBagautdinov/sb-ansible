@@ -1,5 +1,6 @@
 ---
-- name: Install the apache web service
+- hosts: testserv
+  name: Install the apache web service
   become: yes
   tasks:
     - name: Add epel-release repo
