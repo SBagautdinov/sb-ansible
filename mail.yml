@@ -3,10 +3,6 @@
   name: Install the apache web service
   become: yes
   tasks:
-    - name: Put SELinux in permissive mode, logging actions that would be blocked.
-      ansible.posix.selinux:
-        policy: targeted
-        state: permissive
     - name: Add epel-release repo
       yum:
         name: epel-release
